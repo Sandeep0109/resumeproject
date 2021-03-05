@@ -1,0 +1,12 @@
+a.nav-link:hover{
+    color:red;
+    background-color: yellow;
+}
+a.nav-link.active{
+    color:red;
+    background-color: yellowgreen;
+}
+
+a.nav-link{
+    color:whitesmoke;
+}

@@ -1,0 +1,38 @@
+{% extends 'core/base.html' %}
+{%load static %}
+{% block content %} 
+<title>Home</title>
+ <div class="mt-5">
+ <div class="text-center"><img src="{% static 'core/images/imag.jpg' %}" alt="ProfilePic" class="img-thumnail" width="250px" height="280px"></div>
+ <div >
+ <h1 class="font-weight-bold text-white mt-5 mx-5">Hello,</h1>
+  </div>
+  <div class="mx-5 text-justify" style="line-height:2rem;"> 
+  <p style="text-indent:100px; " class="text-white">
+
+It's my pleasure to introduce myself. I'm  <b>SANDEEP DUBEY </b> from SIDDHARTH NAGAR. Currently, I'm pursing my final year master of computer applications from <b>Feroze Gandhi institute of engineering technology </b>. I completed my 10+2 from R P J S Intermediate collage also I have done my schooling from same school
+My father is an employee and my mother is house wife.
+
+My strengths are my attitude that I like to take challenges that I CAN do it, self motivated person, self disciplined I am a good team player as well as has a good ability to lead the team. I can adopt to any kind of environment. I am a good listener and quick learner.
+
+My weakness is I can not tolrete any leniency in work.
+<p class="text-white">
+My short term goal is I want a such a platform where I can grow my career along with the organisation growth like yours and.
+
+My Long term goal is I want to be one of the reason for the success of the organisation and I want to see your organisation as a bench mark to other organisations
+
+Thats all about me sir. 
+ <p class="text-white">Thank you for giving me such a wonderful oppurtunity.</p>
+ </p>
+ 
+</b>
+  </div>
+ 
+ 
+ </div>
+ <div class="text-center">
+ 
+     <a href="{% url 'contact' %}" class="btn btn-outline-danger my-3 mr-5">Hire Me</a>
+    <a href="{% url 'contact' %}" class="btn btn-outline-info my-3 mr-5">Contact</a></div>
+ </div>
+{% endblock content %}

@@ -1,0 +1,52 @@
+ {% extends 'core/base.html' %}
+ {% block content %}
+ <title>Contact Us</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="container mt-4  ">  
+   
+       
+  
+<h1 class="text-warning mb-5   border-bottom">CONTACT US</h1>
+<div class="row text-white mb-5">
+
+    <p class="mx-auto mb-5">
+    Do you have any questions? Please do not hesitate to contact.
+    I will come back to you within a matter of hours to help you.
+    </p>
+    <div class="col-sm-8 mb-5">
+    <form action="/contact/" method="POST"    >
+       
+      
+    
+    {% csrf_token %}
+    <div class="form-row"> 
+       <div class="form-group col-md-6">
+       <label for="name">Your Name</label>
+       <input type="text" class="form-control" name="name"  id="name" required/>
+       </div>
+       
+       <div class="form-group col-md-6">
+       <label for="email">Your Email*</label>
+       <input type="email" class="form-control"  name="email" id="email" required/>
+       </div>
+    </div>
+   
+    <div class="form-group  ">
+       <label for="subject">Your Subject</label>
+       <input type="text" class="form-control" name="subject" id="subject" required/>
+       </div>
+       <div class="mb-3">
+       <label for="massage">Your Massages</label>
+       <textarea id="massage" name="massage" rows="4" cols="71"></textarea>
+        </div> 
+    
+     <input class="btn btn-primary" type="submit" value="Submit"   >
+    </form> 
+ 
+</script>  
+
+      
+ 
+
+{% endblock content %}
